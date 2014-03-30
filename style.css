@@ -215,3 +215,24 @@ nav ul ul {
 /*nav a:active {
     background-color: #757575;
 }*/
+
+#anim {
+  position:relative;
+  width: 780px;
+  height: 483px;
+}
+
+#anim img {
+  width: 780px;
+  height: 483px;
+  margin: 10px;
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+#anim img.top:hover {
+  opacity:0;
+}
