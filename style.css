@@ -28,19 +28,7 @@ a.active {
 #logo img {
     opacity: 0.5;
 }
-/*
-#logo-text {
-    position: relative;
-    float: left;
-    margin-top: 2%;
-    padding: 10px;
-    opacity: 0.5;
-    left: 50px;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 50px;
-}
-*/
+
 #nav {
     position: relative;
     float: right;
@@ -65,17 +53,13 @@ a.active {
     border-left: 1px dotted #9EA3A3;
 }
 
-#footer {
-    position: absolute;
-    bottom: 0px;
-    left: 700px;
-}
-
-.detail {
+#detail, #video{
+    float: left;
     margin: 10px;
+    font-size: 90%;
 }
 
-.detail img{
+#detail img{
     width: 550px;    
 }
 
@@ -144,14 +128,6 @@ article {
     width: 790px;
 }
 
-/*#top-nav ul {
-    list-style: none;
-}
-
-#top-nav>ul>li {
-    display: inline;
-}*/
-
 body{
     font-family: Century Gothic;
     color: #333;
@@ -162,6 +138,8 @@ body{
     background-image: url('vyqujnb.png');
 }
 
+
+/* http://line25.com/tutorials/how-to-create-a-pure-css-dropdown-menu */
 nav ul ul {
 	display: none;
 }
@@ -212,27 +190,34 @@ nav ul ul {
 			nav ul ul li a:hover {
 				background: #4b545f;
 			}
-/*nav a:active {
-    background-color: #757575;
-}*/
 
+#side-nav{
+    float: left;
+}
+
+#side-nav a {
+    color: #757575; text-decoration: none;
+}
+                        
+/* http://css3.bradshawenterprises.com/cfimg/ */
 #anim {
-  position:relative;
-  width: 780px;
-  height: 483px;
+    float: left;
+    position:relative;
+    width: 580px;
+    height: 359px;
 }
 
 #anim img {
-  width: 780px;
-  height: 483px;
-  margin: 10px;
-  position:absolute;
-  left:0;
-  -webkit-transition: opacity 1s ease-in-out;
-  -moz-transition: opacity 1s ease-in-out;
-  -o-transition: opacity 1s ease-in-out;
-  transition: opacity 1s ease-in-out;
+    width: 580px;
+    height: 359px;
+    margin: 10px;
+    position:absolute;
+    left:0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
 }
 #anim img.top:hover {
-  opacity:0;
+    opacity:0;
 }
